@@ -1,0 +1,9 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-container img {
+    margin: 0 auto;
+    max-width: 50vh;
+    transform: rotate(90deg);
+}
