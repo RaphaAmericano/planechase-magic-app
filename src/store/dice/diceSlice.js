@@ -14,13 +14,11 @@ export const diceSlice = createSlice({
         }
     } 
 });
-// getRandomNumber(1,7)
 export const { setSide } = diceSlice.actions;
 
 export const rollDice = () => (dispatch, getState) => {
     const { planes: { activePlane } } = getState();
     const random = getRandomNumber(1,7);
-    
     dispatch(setSide(random));
     dispatch(setHistoricPlane(activePlane));
     dispatch(setActivePlane({number: random}));
